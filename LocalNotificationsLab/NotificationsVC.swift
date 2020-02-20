@@ -14,6 +14,12 @@ class NotificationsVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     private var notifications = [""]
+    
+    private let pendingNotification = PendingNotification()
+    
+    private var refreshControl: UIRefreshControl!
+    
+    private let center = UNUserNotificationCenter.current()
 
     override func viewDidLoad() {
         super.viewDidLoad()

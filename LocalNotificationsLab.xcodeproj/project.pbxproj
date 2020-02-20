@@ -14,6 +14,7 @@
 		135D2B2A23FF1B510026F646 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 135D2B2923FF1B510026F646 /* Assets.xcassets */; };
 		135D2B2D23FF1B510026F646 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 135D2B2B23FF1B510026F646 /* LaunchScreen.storyboard */; };
 		135D2B3523FF1C4E0026F646 /* CreatingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135D2B3423FF1C4E0026F646 /* CreatingVC.swift */; };
+		135D2B3723FF27E20026F646 /* PendingNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135D2B3623FF27E20026F646 /* PendingNotifications.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		135D2B2C23FF1B510026F646 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		135D2B2E23FF1B510026F646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		135D2B3423FF1C4E0026F646 /* CreatingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatingVC.swift; sourceTree = "<group>"; };
+		135D2B3623FF27E20026F646 /* PendingNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingNotifications.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				135D2B2223FF1B4F0026F646 /* SceneDelegate.swift */,
 				135D2B3423FF1C4E0026F646 /* CreatingVC.swift */,
 				135D2B2423FF1B4F0026F646 /* NotificationsVC.swift */,
+				135D2B3623FF27E20026F646 /* PendingNotifications.swift */,
 				135D2B2623FF1B4F0026F646 /* Main.storyboard */,
 				135D2B2923FF1B510026F646 /* Assets.xcassets */,
 				135D2B2B23FF1B510026F646 /* LaunchScreen.storyboard */,
@@ -145,6 +148,7 @@
 				135D2B3523FF1C4E0026F646 /* CreatingVC.swift in Sources */,
 				135D2B2123FF1B4F0026F646 /* AppDelegate.swift in Sources */,
 				135D2B2323FF1B4F0026F646 /* SceneDelegate.swift in Sources */,
+				135D2B3723FF27E20026F646 /* PendingNotifications.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
