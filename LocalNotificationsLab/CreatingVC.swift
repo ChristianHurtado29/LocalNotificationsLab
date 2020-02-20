@@ -8,11 +8,20 @@
 
 import UIKit
 
+protocol CreatingVCDelegate: AnyObject {
+    func didCreateNotification(_ createNotificationCenter: CreatingVC)
+}
+
 class CreatingVC: UIViewController {
     
     @IBOutlet weak var hourPickerView: UIPickerView!
     @IBOutlet weak var minPickerView: UIPickerView!
     @IBOutlet weak var secPickerView: UIPickerView!
+    
+    weak var delegate: CreatingVCDelegate?
+    
+    private var timeInterval: TimeInterval =
+    Date().timeIntervalSinceNow + 5 
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +48,7 @@ extension CreatingVC: UIPickerViewDataSource, UIPickerViewDelegate{
         case hourPickerView:
             return 25
         case minPickerView, secPickerView:
-            return 61
+            return 60
         default:
             0
         }
@@ -56,13 +65,13 @@ extension CreatingVC: UIPickerViewDataSource, UIPickerViewDelegate{
             return hours[row]
         case minPickerView:
             var minutes = [String]()
-            for min in 0...61 {
+            for min in 0...60 {
                 minutes.append(min.description)
             }
             return minutes[row]
         case secPickerView:
             var seconds = [String]()
-            for sec in 0...61 {
+            for sec in 0...60 {
                 seconds.append(sec.description)
             }
             return seconds[row]
