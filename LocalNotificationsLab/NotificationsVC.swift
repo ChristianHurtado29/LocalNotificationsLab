@@ -35,6 +35,8 @@ class NotificationsVC: UIViewController {
         configurationRefreshControl()
         center.delegate = self
     }
+    
+    
 
     private func configurationRefreshControl(){
         refreshControl = UIRefreshControl()

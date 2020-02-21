@@ -79,12 +79,17 @@
                         <viewLayoutGuide key="safeArea" id="b3h-Mt-AZy"/>
                     </view>
                     <navigationItem key="navigationItem" id="IZc-nQ-E5c">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="tXK-gU-Bjl"/>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="tXK-gU-Bjl">
+                            <connections>
+                                <action selector="doneButton:" destination="WiY-1i-ibu" id="7mJ-RW-LBg"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="hourPickerView" destination="a5Z-4Q-8M9" id="7B1-Vo-QEt"/>
                         <outlet property="minPickerView" destination="UCE-bs-xuu" id="NeU-3I-HLa"/>
                         <outlet property="secPickerView" destination="9Tc-oK-aEF" id="ZEF-nl-xjJ"/>
+                        <outlet property="titleTextField" destination="5jd-07-hzp" id="7zR-Ux-BNq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t36-DK-80K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -140,7 +145,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="NGw-V1-oqy">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="zEM-iZ-nau">
+                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="zEM-iZ-nau">
                             <connections>
                                 <segue destination="rfL-yY-M6d" kind="presentation" id="RhQ-TS-JtX"/>
                             </connections>
@@ -191,4 +196,7 @@
             <point key="canvasLocation" x="1047.8260869565217" y="-571.20535714285711"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="plus" catalog="system" width="64" height="56"/>
+    </resources>
 </document>
